@@ -1,6 +1,5 @@
 ---
-layout: page
-title: Welcome to Amberfold Bees
+layout: default
 ---
 
 ![Amberfold Bees]({{ "/assets/images/logo-main.png" | relative_url }})
@@ -20,7 +19,3 @@ Just my hive notes and other bee buzz.
 {% assign historical = site.colonies | where_exp: "c", "c.status != 'active'" | sort: "established" %}
 {% for c in historical %}- [{{ c.title }}]({{ c.url | relative_url }}){% if c.status %} — {{ c.status }}{% endif %}{% if c.end_date %} {{ c.end_date | date: "%Y-%m-%d" }}{% endif %}
 {% endfor %}
-
-Keeping an eye on the sticky boards to see what the current mite loads are:
-
-![Mite load]({{ "/assets/images/mite-count.jpg" | relative_url }})

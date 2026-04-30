@@ -3,6 +3,13 @@ title: Amberfold Bees
 author: roncewind, the wizzard
 description: Hive notes and buzz about the bees.
 
+exclude:
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
 collections:
   colonies:
     output: true
