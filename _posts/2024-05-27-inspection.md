@@ -10,11 +10,11 @@ date: 2024-05-27
 
 - Crescent moon queen present:
 
-![Crescent moon queen](/WoodlandWizardBees/assets/images/IMG_5265.JPG)
+![Crescent moon queen](/AmberfoldBees/assets/images/IMG_5265.JPG)
 
 - Eggs and larvae present:
 
-![Crescent moon queen](/WoodlandWizardBees/assets/images/IMG_5267.JPG)
+![Crescent moon queen](/AmberfoldBees/assets/images/IMG_5267.JPG)
 
 - Stopped inspection after finding the above, only looked at half the brood frames.
 - I expected more build up and new comb, but it seems they're keeping to the original 6 frames, for now.
@@ -22,8 +22,8 @@ date: 2024-05-27
 - Top feeder did not need to be refilled.
 - Bottom board was mite free or at most two mites since 19 May 2024.  Are these mites?
 
-![Mite?](/WoodlandWizardBees/assets/images/IMG_9473.png)
-![Mite?](/WoodlandWizardBees/assets/images/IMG_9474.png)
+![Mite?](/AmberfoldBees/assets/images/IMG_9473.png)
+![Mite?](/AmberfoldBees/assets/images/IMG_9474.png)
 
 - Wiped and re-oiled the bottom board.
 
@@ -32,11 +32,11 @@ date: 2024-05-27
 
 - Dark queen present:
 
-![Dark queen](/WoodlandWizardBees/assets/images/IMG_5290.JPG)
+![Dark queen](/AmberfoldBees/assets/images/IMG_5290.JPG)
 
 - Eggs and larvae present:
 
-![Eggs, larvae](/WoodlandWizardBees/assets/images/IMG_5289.JPG)
+![Eggs, larvae](/AmberfoldBees/assets/images/IMG_5289.JPG)
 
 - Stopped inspection after finding the above, only looked at half the brood frames.
 - I expected more build up and new comb, but it seems they're keeping to the original 6 frames, for now.

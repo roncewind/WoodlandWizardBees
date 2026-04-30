@@ -13,7 +13,7 @@ date: 2024-07-16
 - Added drone frame 3rd box, 3rd frame
 - Bottom board had 5 mites, example:
 
-![3 Mites](/WoodlandWizardBees/assets/images/IMG_0285.jpg)
+![3 Mites](/AmberfoldBees/assets/images/IMG_0285.jpg)
 
 - Wiped and re-oiled the bottom board.
 
@@ -23,7 +23,7 @@ date: 2024-07-16
 - Added drone frame 2nd box, 3rd frame
 - Bottom board had 2 mites:
 
-![Mite](/WoodlandWizardBees/assets/images/IMG_0290.jpg)
-![Mite](/WoodlandWizardBees/assets/images/IMG_0293.jpg)
+![Mite](/AmberfoldBees/assets/images/IMG_0290.jpg)
+![Mite](/AmberfoldBees/assets/images/IMG_0293.jpg)
 
 - Wiped and re-oiled the bottom board.

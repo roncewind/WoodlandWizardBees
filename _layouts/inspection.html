@@ -1,0 +1,29 @@
+---
+layout: post
+---
+
+{% assign colony_doc = site.colonies | where: "slug", page.colony_id | first %}
+
+<aside class="inspection-stats">
+  <dl>
+    {% if page.colony_id %}
+      <dt>Colony</dt>
+      <dd>{% if colony_doc %}<a href="{{ colony_doc.url | relative_url }}">{{ colony_doc.title }}</a>{% else %}{{ page.colony_id }}{% endif %}</dd>
+    {% endif %}
+    {% assign hive_id = page.hive | default: colony_doc.hive %}
+    {% if hive_id %}<dt>Hive</dt><dd>{{ hive_id }}</dd>{% endif %}
+    {% if page.location %}<dt>Location</dt><dd>{{ page.location }}</dd>{% endif %}
+    {% if page.queen_status %}<dt>Queen status</dt><dd>{{ page.queen_status }}</dd>{% endif %}
+    {% if page.temperament %}<dt>Temperament</dt><dd>{{ page.temperament }}</dd>{% endif %}
+    {% if page.brood %}<dt>Brood</dt><dd>{{ page.brood }}</dd>{% endif %}
+    {% if page.stores %}<dt>Stores</dt><dd>{{ page.stores }}</dd>{% endif %}
+  </dl>
+  {% if page.actions and page.actions.size > 0 %}
+    <p><strong>Actions</strong></p>
+    <ul>
+      {% for a in page.actions %}<li>{{ a }}</li>{% endfor %}
+    </ul>
+  {% endif %}
+</aside>
+
+{{ content }}

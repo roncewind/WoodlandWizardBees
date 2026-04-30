@@ -1,0 +1,20 @@
+- id: OR-01
+  apiary: OR
+  status: vacant
+  notes: East-most orchard position. Held C-2025-02 (lost over winter 2025-26, deadout cleaned 2026-04-22). Equipment ready to receive a colony.
+- id: OR-02
+  apiary: OR
+  status: occupied
+  notes: West-most orchard position. Currently C-2025-03. Has the only working Hive Heart sensor.
+- id: WM-01
+  apiary: WM
+  status: occupied
+  notes: Driveway position. Held C-2025-01 (swarm; lost over winter 2025-26). Currently C-2026-01.
+- id: UH-01
+  apiary: UH
+  status: vacant
+  notes: East-most 2024 position. Held C-2024-01 (lost spring 2025). Yard being reorganized.
+- id: UH-02
+  apiary: UH
+  status: vacant
+  notes: West-most 2024 position. Held C-2024-02 (lost spring 2025). Yard being reorganized.

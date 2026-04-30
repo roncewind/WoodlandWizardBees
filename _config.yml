@@ -1,4 +1,16 @@
 theme: minima
-title: Woodlandshire bees
+title: Amberfold Bees
 author: roncewind, the wizzard
 description: Hive notes and buzz about the bees.
+
+collections:
+  colonies:
+    output: true
+    permalink: /colonies/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: colonies
+    values:
+      layout: colony

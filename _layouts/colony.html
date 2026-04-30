@@ -1,0 +1,50 @@
+---
+layout: page
+---
+
+<dl class="colony-meta">
+  {% if page.status %}<dt>Status</dt><dd>{{ page.status }}{% if page.end_date %} ({{ page.end_date | date: "%Y-%m-%d" }}){% endif %}</dd>{% endif %}
+  {% if page.origin %}<dt>Origin</dt><dd>{{ page.origin }}</dd>{% endif %}
+  {% if page.established %}<dt>Established</dt><dd>{{ page.established | date: "%Y-%m-%d" }}</dd>{% endif %}
+  {% if page.hive %}<dt>Hive</dt><dd>{{ page.hive }}</dd>{% endif %}
+  {% if page.location %}<dt>Location</dt><dd>{{ page.location }}</dd>{% endif %}
+  {% if page.queen_id %}<dt>Queen</dt><dd>{{ page.queen_id }}{% if page.queen_color %} ({{ page.queen_color }}){% endif %}</dd>{% elsif page.queen_color %}<dt>Queen color</dt><dd>{{ page.queen_color }}</dd>{% endif %}
+  {% if page.queen_origin %}<dt>Queen origin</dt><dd>{{ page.queen_origin }}</dd>{% endif %}
+  {% if page.parent %}
+    {% assign parent_doc = site.colonies | where: "slug", page.parent | first %}
+    <dt>Parent</dt>
+    <dd>{% if parent_doc %}<a href="{{ parent_doc.url | relative_url }}">{{ parent_doc.title }}</a>{% else %}{{ page.parent }}{% endif %}</dd>
+  {% endif %}
+</dl>
+
+{{ content }}
+
+<h2>Inspections</h2>
+
+{% assign colony_slug = page.slug %}
+{% assign inspections = site.posts | where: "colony_id", colony_slug | sort: "date" | reverse %}
+
+{% if inspections.size > 0 %}
+  <ul>
+    {% for post in inspections %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }} — {{ post.title }}</a>
+        {% if post.queen_status %} · {{ post.queen_status }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No inspections yet.</p>
+{% endif %}
+
+{% assign descendants = site.colonies | where: "parent", page.slug | sort: "established" %}
+{% if descendants.size > 0 %}
+<h2>Descendants</h2>
+<ul>
+  {% for d in descendants %}
+    <li>
+      <a href="{{ d.url | relative_url }}">{{ d.title }}</a>{% if d.origin %} — {{ d.origin }}{% endif %}{% if d.established %} ({{ d.established | date: "%Y-%m-%d" }}){% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}

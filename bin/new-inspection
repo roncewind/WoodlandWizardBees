@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+# Create a new inspection post for a colony.
+# Usage: bin/new-inspection <colony-id>
+#   bin/new-inspection C-2025-01
+set -euo pipefail
+
+repo_root="$(cd "$(dirname "$0")/.." && pwd)"
+
+list_colonies() {
+  echo "Available colonies:" >&2
+  for f in "${repo_root}/_colonies/"*.md; do
+    [ -e "$f" ] || continue
+    echo "  $(basename "$f" .md)" >&2
+  done
+}
+
+if [ $# -lt 1 ]; then
+  echo "Usage: bin/new-inspection <colony-id>" >&2
+  list_colonies
+  exit 1
+fi
+
+colony="$1"
+
+if [ ! -e "${repo_root}/_colonies/${colony}.md" ]; then
+  echo "Unknown colony: ${colony}" >&2
+  list_colonies
+  exit 1
+fi
+
+date="$(date +%Y-%m-%d)"
+file="${repo_root}/_posts/${date}-${colony}-inspection.md"
+
+if [ -e "$file" ]; then
+  echo "Already exists: ${file#$repo_root/}" >&2
+  echo "Edit it directly, or pass a different colony id." >&2
+  exit 1
+fi
+
+cat > "$file" <<EOF
+---
+layout: inspection
+title: "${colony} inspection"
+date: ${date}
+colony_id: ${colony}
+hive:
+location:
+queen_status:
+temperament:
+brood:
+stores:
+actions:
+  -
+tags:
+  - inspection
+---
+
+EOF
+
+echo "Created ${file#$repo_root/}"
+echo "Open it in your editor and write."

@@ -19,22 +19,22 @@ were filled in then what happened to them?
 - Eggs, larvae, and capped brood present.
 - Open nectar, 6 full frames of capped honey, and some pollen
 
-![Capped honey](/WoodlandWizardBees/assets/images/IMG_6135.jpg)
-![Capped honey](/WoodlandWizardBees/assets/images/IMG_6136.jpg)
-![Different colored pollen](/WoodlandWizardBees/assets/images/IMG_6143.jpg)
+![Capped honey](/AmberfoldBees/assets/images/IMG_6135.jpg)
+![Capped honey](/AmberfoldBees/assets/images/IMG_6136.jpg)
+![Different colored pollen](/AmberfoldBees/assets/images/IMG_6143.jpg)
 
 - Honey super not built out at all.
 - Building out drone frame nicely:
 
-![Drone frame](/WoodlandWizardBees/assets/images/IMG_6126.jpg)
-![Drone frame](/WoodlandWizardBees/assets/images/IMG_6128.jpg)
+![Drone frame](/AmberfoldBees/assets/images/IMG_6126.jpg)
+![Drone frame](/AmberfoldBees/assets/images/IMG_6128.jpg)
 
 - Laying pattern ok?
 
-![Capped brood](/WoodlandWizardBees/assets/images/IMG_6144.jpg)
-![Capped brood](/WoodlandWizardBees/assets/images/IMG_6146.jpg)
-![Capped brood](/WoodlandWizardBees/assets/images/IMG_6147.jpg)
-![Capped brood](/WoodlandWizardBees/assets/images/IMG_6150.jpg)
+![Capped brood](/AmberfoldBees/assets/images/IMG_6144.jpg)
+![Capped brood](/AmberfoldBees/assets/images/IMG_6146.jpg)
+![Capped brood](/AmberfoldBees/assets/images/IMG_6147.jpg)
+![Capped brood](/AmberfoldBees/assets/images/IMG_6150.jpg)
 
 
 - Bottom board had 4 mites.
@@ -60,11 +60,11 @@ looks like.
 
 - Laying pattern doesn't seem good:
 
-![Laying pattern?](/WoodlandWizardBees/assets/images/IMG_6159.jpg)
-![Laying pattern?](/WoodlandWizardBees/assets/images/IMG_6160.jpg)
-![Laying pattern?](/WoodlandWizardBees/assets/images/IMG_6161.jpg)
-![Laying pattern?](/WoodlandWizardBees/assets/images/IMG_6162.jpg)
-![Laying pattern?](/WoodlandWizardBees/assets/images/IMG_6163.jpg)
+![Laying pattern?](/AmberfoldBees/assets/images/IMG_6159.jpg)
+![Laying pattern?](/AmberfoldBees/assets/images/IMG_6160.jpg)
+![Laying pattern?](/AmberfoldBees/assets/images/IMG_6161.jpg)
+![Laying pattern?](/AmberfoldBees/assets/images/IMG_6162.jpg)
+![Laying pattern?](/AmberfoldBees/assets/images/IMG_6163.jpg)
 
 
 - Bottom board had 1 mite
