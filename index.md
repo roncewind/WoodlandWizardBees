@@ -4,7 +4,7 @@ layout: default
 
 ![Amberfold Bees]({{ "/assets/images/logo-main.png" | relative_url }})
 
-Just my hive notes and other bee buzz.
+In which I keep my hive notes and other thoughts about the bees.
 
 ## Colonies
 
