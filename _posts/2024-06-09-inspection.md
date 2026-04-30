@@ -12,7 +12,7 @@ date: 2024-06-09
 - Temperament: calm
 - Crescent moon queen present:
 
-![Crescent moon queen](/AmberfoldBees/assets/images/IMG_5377.JPG)
+![Crescent moon queen]({{ "/assets/images/IMG_5377.JPG" | relative_url }})
 
 - Eggs and larvae present
 - Top feeder did not need to be refilled.
@@ -25,7 +25,7 @@ date: 2024-06-09
 - Temperament: calm
 - Dark queen present:
 
-![Dark queen](/AmberfoldBees/assets/images/IMG_5411.JPG)
+![Dark queen]({{ "/assets/images/IMG_5411.JPG" | relative_url }})
 
 - Eggs and larvae present
 - Top feeder did not need to be refilled.

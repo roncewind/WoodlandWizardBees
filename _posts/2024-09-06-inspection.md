@@ -22,6 +22,6 @@ date: 2024-09-06
 - Green dot frame looks the same.
 - Queen is laying in the upper box now. Young larvae in cells where there was no capped brood and nectar around the edges.
 
-![3rd box brood](/AmberfoldBees/assets/images/IMG_0657.jpg)
+![3rd box brood]({{ "/assets/images/IMG_0657.jpg" | relative_url }})
 
 - I wonder if this bodes well for this queen?

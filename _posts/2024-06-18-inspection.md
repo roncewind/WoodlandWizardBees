@@ -12,7 +12,7 @@ date: 2024-06-18
 - Temperament: calm
 - Crescent moon queen present:
 
-![Crescent moon queen](/AmberfoldBees/assets/images/IMG_5480.JPG)
+![Crescent moon queen]({{ "/assets/images/IMG_5480.JPG" | relative_url }})
 
 - Eggs and larvae present
 - Top feeder: added 1/2 gallon 1:1 syrup

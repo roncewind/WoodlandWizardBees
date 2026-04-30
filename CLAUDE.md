@@ -4,9 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A Jekyll-based GitHub Pages blog ("Amberfold Bees") for beekeeping hive notes. There is no application code — only Jekyll content and config. The site uses the `minima` theme (see `_config.yml`).
-
-The repository was forked from GitHub Skills' `github-pages` course template, which is why `.github/steps/` and `.github/workflows/0-*..5-*.yml` exist. Those workflows drive course progression (auto-PR comments, step tracking) and have nothing to do with publishing the site — GitHub Pages itself is what builds and deploys. Don't treat them as site CI; leave them alone unless explicitly asked.
+A Jekyll-based GitHub Pages blog ("Amberfold Bees") for beekeeping hive notes. There is no application code — only Jekyll content and config. The site uses the `minima` theme (see `_config.yml`). GitHub Pages itself builds and deploys on push; there is no site CI in this repo.
 
 ## Mental model
 

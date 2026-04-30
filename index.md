@@ -1,6 +1,10 @@
 ---
+layout: page
 title: Welcome to Amberfold Bees
 ---
+
+![Amberfold Bees]({{ "/assets/images/logo-main.png" | relative_url }})
+
 Just my hive notes and other bee buzz.
 
 ## Colonies
@@ -19,4 +23,4 @@ Just my hive notes and other bee buzz.
 
 Keeping an eye on the sticky boards to see what the current mite loads are:
 
-![Mite load](/AmberfoldBees/assets/images/mite-count.jpg)
+![Mite load]({{ "/assets/images/mite-count.jpg" | relative_url }})

@@ -1,0 +1,40 @@
+---
+---
+
+$background-color: #EFDDC1;
+$text-color:       #2E4A34;
+$brand-color:      #2E4A34;
+$link-color:       #6C8B63;
+
+@import "minima";
+
+body {
+  background-image: url("{{ '/assets/images/parchment.png' | relative_url }}");
+  background-repeat: repeat;
+}
+
+a,
+a:visited {
+  color: $link-color;
+}
+a:hover {
+  color: $text-color;
+}
+
+.colony-meta,
+.inspection-stats dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.75rem;
+  row-gap: 0.25rem;
+  margin: 0 0 1rem 0;
+
+  dt {
+    font-weight: 600;
+    &::after { content: ":"; }
+  }
+
+  dd {
+    margin: 0;
+  }
+}

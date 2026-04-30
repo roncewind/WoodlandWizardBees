@@ -14,12 +14,12 @@ date: 2024-06-24
 - Lots of activity in front of the hive
 - Crescent moon queen present:
 
-![Crescent moon queen](/AmberfoldBees/assets/images/IMG_5645.JPG)
+![Crescent moon queen]({{ "/assets/images/IMG_5645.JPG" | relative_url }})
 
 - Eggs, larvae, and capped brood present
 
-![Eggs!](/AmberfoldBees/assets/images/IMG_5601.JPG)
-![Eggs!](/AmberfoldBees/assets/images/IMG_5595.JPG)
+![Eggs!]({{ "/assets/images/IMG_5601.JPG" | relative_url }})
+![Eggs!]({{ "/assets/images/IMG_5595.JPG" | relative_url }})
 
 - Capped honey building up
 - Top feeder: did not need to feed
@@ -33,11 +33,11 @@ date: 2024-06-24
 - Lots of activity in front of the hive
 - Dark queen present:
 
-![Dark queen](/AmberfoldBees/assets/images/IMG_5678.JPG)
+![Dark queen]({{ "/assets/images/IMG_5678.JPG" | relative_url }})
 
 - Eggs, larvae, and capped brood present
 
-![Eggs!](/AmberfoldBees/assets/images/IMG_5664.JPG)
+![Eggs!]({{ "/assets/images/IMG_5664.JPG" | relative_url }})
 
 - Capped honey building up
 - Top feeder: did not need to feed
