@@ -8,11 +8,12 @@ A Jekyll-based GitHub Pages blog ("Amberfold Bees") for beekeeping hive notes. T
 
 ## Mental model
 
-Three entities:
+Four entities:
 
 1. **Apiary** — a yard / grouping of hives. Currently `Orchard`, `Waymeet` (the driveway), `Underhill` (the down-the-hill yard, dormant since spring 2025). Each apiary has a two-letter prefix: `OR`, `WM`, `UH`. Registered in `_data/apiaries.yml`.
 2. **Hive position** — a specific spot within an apiary. Permanent ID `<apiary-prefix>-<NN>` (`OR-01`, `OR-02`, `WM-01`, …). IDs are forever and never reused, even after a position is retired (`status: retired`). Registered in `_data/hives.yml`. There is no `_hives/` collection — these are field-only.
 3. **Colony** — the biological lineage living at a hive. Permanent ID `C-YYYY-NN` (year first observed, then sequence). Tracked in `_colonies/<id>.md`. Splits/swarms record `parent: <colony-id>` so lineage walks backward in one hop.
+4. **Swarm trap** — a baited box positioned to catch wild swarms or absconding colonies. Permanent named slug (`waymeet`, `underhill`, `forest`). Tracked in `_traps/<slug>.md`. Observation posts carry `trap_id: <slug>`. If a swarm moves in and is kept, create a new colony with `origin: swarm` and `caught_from: <trap-slug>` — the trap page's "Catches" section back-links automatically.
 
 A colony references its current hive via the `hive:` front-matter field (e.g. `hive: OR-02`). Inspection posts can carry their own `hive:` for the rare day a colony was somewhere different — otherwise the inspection layout falls back to `colony.hive`. So in practice: when a colony moves, update its `hive:` field once on the colony page, and most posts need no override.
 
@@ -36,6 +37,8 @@ The repo has two coexisting post styles:
 - The fastest way to start one is `bin/new-inspection <colony-id>`. The script validates the colony id against `_colonies/`, refuses to clobber an existing file, and lists available colonies if called with no args or a typo.
 
 **Legacy posts** (pre-2026): no `layout` field, plain prose with `title` + `date` only. They render via minima's default `post` layout and should be left alone — don't retrofit them unless asked.
+
+**Trap observation posts**: plain post (no `layout: inspection`), but include `trap_id: <slug>` so `_layouts/trap.html` picks it up on the trap page. These are typically short observational notes ("noticed scouts," "lots of activity," "checked it — empty"), not frame inspections, so the inspection stats block would be empty. A catch event lives on the trap (`trap_id:`) and triggers creation of a new colony with `origin: swarm` and `caught_from: <trap-slug>`.
 
 ## Colonies collection
 

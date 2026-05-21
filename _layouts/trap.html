@@ -1,0 +1,42 @@
+---
+layout: page
+---
+
+<dl class="trap-meta">
+  {% if page.status %}<dt>Status</dt><dd>{{ page.status }}</dd>{% endif %}
+  {% if page.location %}<dt>Location</dt><dd>{{ page.location }}</dd>{% endif %}
+  {% if page.near_apiary %}<dt>Near apiary</dt><dd>{{ page.near_apiary }}</dd>{% endif %}
+  {% if page.equipment %}<dt>Equipment</dt><dd>{{ page.equipment }}</dd>{% endif %}
+  {% if page.established %}<dt>Established</dt><dd>{{ page.established | date: "%Y-%m-%d" }}</dd>{% endif %}
+</dl>
+
+{{ content }}
+
+<h2>Observations</h2>
+
+{% assign trap_slug = page.slug %}
+{% assign observations = site.posts | where: "trap_id", trap_slug | sort: "date" | reverse %}
+
+{% if observations.size > 0 %}
+  <ul>
+    {% for post in observations %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }} — {{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No observations recorded yet.</p>
+{% endif %}
+
+{% assign catches = site.colonies | where: "caught_from", page.slug | sort: "established" %}
+{% if catches.size > 0 %}
+<h2>Catches</h2>
+<ul>
+  {% for c in catches %}
+    <li>
+      <a href="{{ c.url | relative_url }}">{{ c.title }}</a>{% if c.established %} — {{ c.established | date: "%Y-%m-%d" }}{% endif %}{% if c.status %} ({{ c.status }}){% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
