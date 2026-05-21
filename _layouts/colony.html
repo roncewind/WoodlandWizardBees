@@ -11,9 +11,16 @@ layout: page
   {% if page.queen_id %}<dt>Queen</dt><dd>{{ page.queen_id }}{% if page.queen_color %} ({{ page.queen_color }}){% endif %}</dd>{% elsif page.queen_color %}<dt>Queen color</dt><dd>{{ page.queen_color }}</dd>{% endif %}
   {% if page.queen_origin %}<dt>Queen origin</dt><dd>{{ page.queen_origin }}</dd>{% endif %}
   {% if page.parent %}
-    {% assign parent_doc = site.colonies | where: "slug", page.parent | first %}
-    <dt>Parent</dt>
-    <dd>{% if parent_doc %}<a href="{{ parent_doc.url | relative_url }}">{{ parent_doc.title }}</a>{% else %}{{ page.parent }}{% endif %}</dd>
+    {% assign parent_list = page.parent %}
+    {% if parent_list.first.size == 1 %}{% assign parent_list = parent_list | split: "|||" %}{% endif %}
+    <dt>Parent{% if parent_list.size > 1 %}s{% endif %}</dt>
+    <dd>
+      {% for parent_slug in parent_list %}
+        {%- assign parent_doc = site.colonies | where: "slug", parent_slug | first -%}
+        {%- if parent_doc %}<a href="{{ parent_doc.url | relative_url }}">{{ parent_doc.title }}</a>{% else %}{{ parent_slug }}{% endif -%}
+        {%- unless forloop.last %}, {% endunless -%}
+      {% endfor %}
+    </dd>
   {% endif %}
 </dl>
 
@@ -37,7 +44,7 @@ layout: page
   <p>No inspections yet.</p>
 {% endif %}
 
-{% assign descendants = site.colonies | where: "parent", page.slug | sort: "established" %}
+{% assign descendants = site.colonies | where_exp: "c", "c.parent contains page.slug" | sort: "established" %}
 {% if descendants.size > 0 %}
 <h2>Descendants</h2>
 <ul>
